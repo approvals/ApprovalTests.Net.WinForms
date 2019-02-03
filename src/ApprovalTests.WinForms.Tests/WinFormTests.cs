@@ -24,7 +24,9 @@ public class WinFormTests
     [Fact]
     public void TestFormApproval()
     {
+        #region usage
         WinFormsApprovals.Verify(new Form());
+        #endregion
     }
 
     [Fact]
