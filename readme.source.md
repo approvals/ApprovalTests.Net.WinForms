@@ -1,4 +1,4 @@
-# <img src="https://avatars3.githubusercontent.com/u/36907" height="30px"> ApprovalTests.StatePrinter
+# <img src="https://avatars3.githubusercontent.com/u/36907" height="30px"> ApprovalTests.WinForms
 
 Extends [ApprovalTests](https://github.com/approvals/ApprovalTests.Net) for approval of Windows Forms through screenshot verification.
 
@@ -12,31 +12,10 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 
 ## Usage
 
-Given a model:
-
-snippet: model
-
-That is verified:
 
 snippet: usage
 
-Will result in this as an approved file:
 
-```
-Root = new Turtle(), ref: 0
-{
-    Name = "jim"
-    On = new Turtle()
-    {
-        Name = "kasper"
-        On = new Turtle()
-        {
-            Name = "llewellyn"
-            On = -> 0
-        }
-    }
-}
-```
 
 
 ## Links
