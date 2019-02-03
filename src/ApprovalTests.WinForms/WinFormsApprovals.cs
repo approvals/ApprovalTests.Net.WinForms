@@ -11,9 +11,9 @@ namespace ApprovalTests.WinForms
 {
     public class WinFormsApprovals
     {
-        private static Func<IDisposable> addAdditionalInfo = ApprovalResults.UniqueForOs;
+        static Func<IDisposable> addAdditionalInfo = ApprovalResults.UniqueForOs;
 
-        public static void RegisterDefaultAddtionalInfo(Func<IDisposable> a)
+        public static void RegisterDefaultAdditionalInfo(Func<IDisposable> a)
         {
             addAdditionalInfo = a;
         }
@@ -57,7 +57,7 @@ namespace ApprovalTests.WinForms
         {
             return form.GetInstanceFields()
                 .Select(fi => fi.GetValue(form))
-                .Where(o => EventApprovals.GetEventsInformationFor(o).Count() > 0);
+                .Where(o => EventApprovals.GetEventsInformationFor(o).Any());
         }
     }
 }

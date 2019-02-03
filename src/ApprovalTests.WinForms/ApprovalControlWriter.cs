@@ -6,24 +6,24 @@ namespace ApprovalTests.WinForms
 {
     public class ApprovalControlWriter : IApprovalWriter
     {
-        private readonly Control control;
+        Control control;
 
         public ApprovalControlWriter(Control controlHandle)
         {
             control = controlHandle;
         }
 
-        public string GetApprovalFilename(string basename)
+        public virtual string GetApprovalFilename(string basename)
         {
-            return basename + WriterUtils.Approved + ".png";
+            return $"{basename}{WriterUtils.Approved}.png";
         }
 
-        public string GetReceivedFilename(string basename)
+        public virtual string GetReceivedFilename(string basename)
         {
-            return basename + WriterUtils.Received + ".png";
+            return $"{basename}{WriterUtils.Received}.png";
         }
 
-        public string WriteReceivedFile(string received)
+        public virtual string WriteReceivedFile(string received)
         {
             return WinFormsUtils.ScreenCapture(received, control);
         }

@@ -17,7 +17,7 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup>[snippet source](/src/ApprovalTests.WinForms.Tests/WinFormTests.cs#L27-L29)</sup>
+<sup>[snippet source](/src/ApprovalTests.WinForms.Tests/WinFormTests.cs#L26-L28)</sup>
 <!-- endsnippet -->
 
 
@@ -26,4 +26,4 @@ WinFormsApprovals.Verify(new Form());
 ## Links
 
  * NuGet: https://nuget.org/packages/ApprovalTests.WinForms/
- * Build: [![Build Status](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_apis/build/status/approvals.ApprovalTests.Net.WinForms?branchName=master)](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_build/latest?definitionId=1&branchName=master)
+ * Build: [![Build Status](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_apis/build/status/approvals.ApprovalTests.Net.WinForms?branchName=master)](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_build/latest?definitionId=2&branchName=master)

@@ -18,10 +18,10 @@ namespace ApprovalTests.WinForms
 
         public static void SavePng(string received, Control control)
         {
-            using (var b = new Bitmap(control.Width, control.Height, PixelFormat.Format32bppArgb))
+            using (var bitmap = new Bitmap(control.Width, control.Height, PixelFormat.Format32bppArgb))
             {
-                control.DrawToBitmap(b, new Rectangle(0, 0, control.Width, control.Height));
-                b.Save(received, ImageFormat.Png);
+                control.DrawToBitmap(bitmap, new Rectangle(0, 0, control.Width, control.Height));
+                bitmap.Save(received, ImageFormat.Png);
             }
         }
 
@@ -49,7 +49,7 @@ namespace ApprovalTests.WinForms
             controlUnderTest.Show();
         }
 
-        private static void AddToParent(Form hidden, Control controlUnderTest)
+        static void AddToParent(Form hidden, Control controlUnderTest)
         {
             if (controlUnderTest is Form form)
             {
