@@ -21,4 +21,4 @@ snippet: usage
 ## Links
 
  * NuGet: https://nuget.org/packages/ApprovalTests.WinForms/
- * Build: [![Build Status](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_apis/build/status/approvals.ApprovalTests.Net.WinForms?branchName=master)](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_build/latest?definitionId=1&branchName=master)
+ * Build: [![Build Status](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_apis/build/status/approvals.ApprovalTests.Net.WinForms?branchName=master)](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_build/latest?definitionId=2&branchName=master)
