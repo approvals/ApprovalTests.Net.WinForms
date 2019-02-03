@@ -1,13 +1,12 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
-using ApprovalTests.Core;
 using ApprovalTests.Reporters;
 using ApprovalTests.Tests.WinForms;
 using ApprovalTests.WinForms;
 using Xunit;
 using Button = System.Windows.Forms.Button;
 
-[UseReporter(typeof(AllFailingTestsClipboardReporter), typeof(ImageReporter))]
+[UseReporter(typeof(AllFailingTestsClipboardReporter))]
 public class WinFormTests
 {
     [Fact]
@@ -30,7 +29,6 @@ public class WinFormTests
     }
 
     [Fact]
-    [UseReporter(typeof(TortoiseDiffReporter))]
     public void VerifyCompleteFormTest()
     {
         WinFormsApprovals.VerifyEventsFor(new DemoForm());
