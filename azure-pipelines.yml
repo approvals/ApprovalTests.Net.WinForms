@@ -38,6 +38,7 @@ steps:
     contents: '**\*.received.*'
     targetFolder: '$(Build.ArtifactStagingDirectory)\received'
 - task: PublishBuildArtifacts@1
+  continueOnError: true
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)\received'
     artifactName: received
