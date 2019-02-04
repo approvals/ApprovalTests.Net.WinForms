@@ -35,9 +35,18 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    contents: '**\*.png'
-    targetFolder: $(Build.ArtifactStagingDirectory)
+    contents: '**\*.received.*'
+    targetFolder: '$(Build.ArtifactStagingDirectory)\received'
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: $(Build.ArtifactStagingDirectory)
-    artifactName: MyBuildOutputs
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)\received'
+    artifactName: received
+
+- task: CopyFiles@2
+  inputs:
+    contents: 'nuget_packages\*.*'
+    targetFolder: '$(Build.ArtifactStagingDirectory)\nugets'
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)\nugets'
+    artifactName: nugets
