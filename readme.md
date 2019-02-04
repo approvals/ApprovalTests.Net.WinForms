@@ -17,7 +17,7 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup>[snippet source](/src/ApprovalTests.WinForms.Tests/WinFormTests.cs#L26-L28)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L26-L28)</sup>
 <!-- endsnippet -->
 
 
