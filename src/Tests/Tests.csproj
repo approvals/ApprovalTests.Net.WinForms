@@ -10,7 +10,7 @@
     <Reference Include="System.Windows.Forms" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <PackageReference Include="Xunit" Version="2.4.1" />
-    <PackageReference Include="CaptureSnippetsSimple" Version="8.6.3" />
+    <PackageReference Include="CaptureSnippetsSimple" Version="8.6.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <ProjectReference Include="..\ApprovalTests.WinForms\ApprovalTests.WinForms.csproj" />
   </ItemGroup>
