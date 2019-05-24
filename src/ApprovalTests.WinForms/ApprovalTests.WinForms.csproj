@@ -22,6 +22,6 @@ WinFormsApprovals.Verify(new Button { BackColor = Color.LightBlue, Text = "Help"
   <ItemGroup>
     <Reference Include="System.Windows.Forms" />
     <PackageReference Include="ApprovalTests" Version="3.0.22" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19270-01" PrivateAssets="All" />
   </ItemGroup>
 </Project>
