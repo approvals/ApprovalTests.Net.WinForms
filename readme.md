@@ -20,6 +20,19 @@ WinFormsApprovals.Verify(new Form());
 <sup>[snippet source](/src/Tests/WinFormTests.cs#L26-L28)</sup>
 <!-- endsnippet -->
 
+## System Differences
+
+Usually Approval files take the form 
+
+`ClassName.MethodName.approved.extention` 
+
+However, as winforms will render differently on each OS, when approving with winform it will take the form
+
+`ClassName.MethodName.osname.approved.extention` 
+
+For Example:
+
+`WinFormTests.TestControlApproved.Microsoft_Windows_10_Home_N.approved.png`
 
 
 
