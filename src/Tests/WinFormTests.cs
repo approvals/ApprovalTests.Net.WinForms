@@ -1,14 +1,40 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
+using ApprovalTests;
+using ApprovalTests.Namers;
 using ApprovalTests.Reporters;
 using ApprovalTests.Tests.WinForms;
 using ApprovalTests.WinForms;
 using Xunit;
-using Button = System.Windows.Forms.Button;
 
 [UseReporter(typeof(AllFailingTestsClipboardReporter))]
 public class WinFormTests
 {
+    [Fact]
+    public void DemoAlternativeMachineSpecific()
+    {
+        using (var previous =
+            // begin-snippet: alternative_naming
+            WinFormsApprovals
+                .RegisterDefaultAdditionalInfo(
+                    () => ApprovalResults.UniqueForUserName()
+                )
+        // end-snippet
+        )
+        {
+            using (var info = WinFormsApprovals.GetDefaultAdditionalInfo()())
+            {
+                var name = Approvals.GetDefaultNamer().Name;
+                var approvalName =
+                    // begin-snippet: alternative_custom_name
+                    "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
+                // end-snippet:
+
+                Assert.Equal(approvalName, name);
+            }
+        }
+    }
+
     [Fact]
     public void TestControlApproved()
     {
@@ -24,7 +50,9 @@ public class WinFormTests
     public void TestFormApproval()
     {
         #region usage
+
         WinFormsApprovals.Verify(new Form());
+
         #endregion
     }
 

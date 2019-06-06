@@ -15,7 +15,35 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 
 snippet: usage
 
+## System Differences
 
+Usually Approval files take the form 
+
+`ClassName.MethodName.approved.extention` 
+
+However, as winforms will render differently on each OS, when approving with winform it will take the form
+
+`ClassName.MethodName.osname.approved.extention` 
+
+It does this before each run by calling  
+
+snippet: additional_info
+
+
+An Example Approval File would be:
+
+`WinFormTests.TestControlApproved.Microsoft_Windows_10_Home_N.approved.png`
+
+### Customizing System Naming
+
+If you would like a diffent naming system you can customize the default naming.
+For example, if you would like to use the .net_version number you could do this:
+
+snippet: alternative_naming
+
+Would yield:
+
+snippet: alternative_custom_name
 
 
 ## Links

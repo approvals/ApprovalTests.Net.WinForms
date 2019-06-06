@@ -11,11 +11,22 @@ namespace ApprovalTests.WinForms
 {
     public class WinFormsApprovals
     {
-        static Func<IDisposable> addAdditionalInfo = ApprovalResults.UniqueForOs;
+         static Func<IDisposable> addAdditionalInfo =
+            #region additional_info
+            ApprovalResults.UniqueForOs;
+            #endregion
 
-        public static void RegisterDefaultAdditionalInfo(Func<IDisposable> a)
+        public static IDisposable RegisterDefaultAdditionalInfo(Func<IDisposable> a)
         {
+            var previous = addAdditionalInfo;
             addAdditionalInfo = a;
+            return Disposables.Create(()=> addAdditionalInfo = previous);
+
+        }
+
+        public static Func<IDisposable> GetDefaultAdditionalInfo()
+        {
+            return addAdditionalInfo;
         }
 
         public static void VerifyEventsFor(Form form)
@@ -24,9 +35,7 @@ namespace ApprovalTests.WinForms
             sb.Append(EventApprovals.WriteEventsToString(form, ""));
 
             foreach (var o in GetSubEvents(form))
-            {
                 sb.Append(EventApprovals.WriteEventsToString(o, GetLabelForChild(form, o)));
-            }
 
             Approvals.Verify(sb.ToString());
         }
