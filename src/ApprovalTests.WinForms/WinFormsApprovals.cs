@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using ApprovalTests.Events;
 using ApprovalTests.Namers;
 using ApprovalUtilities.Reflection;
+using ApprovalUtilities.Utilities;
 
 namespace ApprovalTests.WinForms
 {
