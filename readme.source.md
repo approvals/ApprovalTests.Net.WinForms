@@ -46,7 +46,7 @@ Would yield:
 
 snippet: alternative_custom_name
 
-Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/Docs/EnvironmentSpecificTests.md)
+Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)
 
 ## Links
 
