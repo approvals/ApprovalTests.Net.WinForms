@@ -23,7 +23,7 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L53-L57)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L52-L56)</sup>
 <!-- endsnippet -->
 
 ## System Differences
@@ -42,7 +42,7 @@ It does this before each run by calling
 ```cs
 ApprovalResults.UniqueForOs;
 ```
-<sup>[snippet source](/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L15-L17)</sup>
+<sup>[snippet source](/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L16-L18)</sup>
 <!-- endsnippet -->
 
 
