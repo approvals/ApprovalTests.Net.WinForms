@@ -37,7 +37,8 @@ An Example Approval File would be:
 ### Customizing System Naming
 
 If you would like a diffent naming system you can customize the default naming.
-For example, if you would like to use the .net_version number you could do this:
+
+For example, if you would like to use the the users name you could do this:
 
 snippet: alternative_naming
 
@@ -45,6 +46,7 @@ Would yield:
 
 snippet: alternative_custom_name
 
+Read more on [EnvironmentSpecificTest here] (https://github.com/approvals/ApprovalTests.Net/blob/master/Docs/EnvironmentSpecificTests.md)
 
 ## Links
 

@@ -23,7 +23,7 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L52-L56)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L53-L57)</sup>
 <!-- endsnippet -->
 
 ## System Differences
@@ -53,7 +53,8 @@ An Example Approval File would be:
 ### Customizing System Naming
 
 If you would like a diffent naming system you can customize the default naming.
-For example, if you would like to use the .net_version number you could do this:
+
+For example, if you would like to use the the users name you could do this:
 
 <!-- snippet: alternative_naming -->
 ```cs
@@ -74,6 +75,7 @@ Would yield:
 <sup>[snippet source](/src/Tests/WinFormTests.cs#L29-L31)</sup>
 <!-- endsnippet -->
 
+Read more on [EnvironmentSpecificTest here] (https://github.com/approvals/ApprovalTests.Net/blob/master/Docs/EnvironmentSpecificTests.md)
 
 ## Links
 
