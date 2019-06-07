@@ -75,7 +75,7 @@ Would yield:
 <sup>[snippet source](/src/Tests/WinFormTests.cs#L29-L31)</sup>
 <!-- endsnippet -->
 
-Read more on [EnvironmentSpecificTest here] (https://github.com/approvals/ApprovalTests.Net/blob/master/Docs/EnvironmentSpecificTests.md)
+Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/Docs/EnvironmentSpecificTests.md)
 
 ## Links
 
