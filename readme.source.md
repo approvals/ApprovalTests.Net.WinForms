@@ -12,31 +12,31 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 
 ## Usage
 
-
 snippet: usage
+
 
 ## System Differences
 
-Usually Approval files take the form 
+Usually Approval files take the form:
 
-`ClassName.MethodName.approved.extention` 
+`ClassName.MethodName.approved.extension`
 
-However, as winforms will render differently on each OS, when approving with winform it will take the form
+However, as WinForms will render differently on each OS, when approving with WinForms it will take the form
 
-`ClassName.MethodName.osname.approved.extention` 
+`ClassName.MethodName.osname.approved.extension`
 
-It does this before each run by calling  
+It does this before each run by calling
 
 snippet: additional_info
-
 
 An Example Approval File would be:
 
 `WinFormTests.TestControlApproved.Microsoft_Windows_10_Home_N.approved.png`
 
+
 ### Customizing System Naming
 
-If you would like a diffent naming system you can customize the default naming.
+If you would like a different naming system you can customize the default naming.
 
 For example, if you would like to use the the users name you could do this:
 
@@ -47,6 +47,7 @@ Would yield:
 snippet: alternative_custom_name
 
 Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)
+
 
 ## Links
 

@@ -80,7 +80,7 @@ namespace ApprovalTests.Tests.WinForms
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += new EventHandler(button1_Click);
+            button1.Click += button1_Click;
 
             //
             // checkBox1
@@ -92,7 +92,7 @@ namespace ApprovalTests.Tests.WinForms
             checkBox1.TabIndex = 1;
             checkBox1.Text = "checkBox1";
             checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += new EventHandler(checkBox1_CheckedChanged);
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
 
             //
             // listBox1
@@ -106,7 +106,7 @@ namespace ApprovalTests.Tests.WinForms
             //
             // timer1
             //
-            timer1.Tick += new EventHandler(timer1_Tick);
+            timer1.Tick += timer1_Tick;
 
             //
             // DemoForm
@@ -119,7 +119,7 @@ namespace ApprovalTests.Tests.WinForms
             Controls.Add(button1);
             Name = "DemoForm";
             Text = "DemoForm";
-            Load += new EventHandler(DemoForm_Load);
+            Load += DemoForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

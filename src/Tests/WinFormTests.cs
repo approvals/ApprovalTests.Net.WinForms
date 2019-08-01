@@ -10,16 +10,14 @@ using Xunit;
 [UseReporter(typeof(AllFailingTestsClipboardReporter))]
 public class WinFormTests
 {
+#if DEBUG
     [Fact]
     public void DemoAlternativeMachineSpecific()
     {
         using (var previous =
-            // begin-snippet: alternative_naming
-            WinFormsApprovals
-                .RegisterDefaultAdditionalInfo(
-                    () => ApprovalResults.UniqueForUserName()
-                )
-        // end-snippet
+                // begin-snippet: alternative_naming
+                WinFormsApprovals.RegisterDefaultAdditionalInfo(ApprovalResults.UniqueForUserName)
+            // end-snippet
         )
         {
             using (var info = WinFormsApprovals.GetDefaultAdditionalInfo()())
@@ -34,6 +32,7 @@ public class WinFormTests
             }
         }
     }
+#endif
 
     [Fact]
     public void TestControlApproved()

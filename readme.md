@@ -19,25 +19,25 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 
 ## Usage
 
-
 <!-- snippet: usage -->
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L52-L56)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L49-L53)</sup>
 <!-- endsnippet -->
+
 
 ## System Differences
 
-Usually Approval files take the form 
+Usually Approval files take the form:
 
-`ClassName.MethodName.approved.extention` 
+`ClassName.MethodName.approved.extension`
 
-However, as winforms will render differently on each OS, when approving with winform it will take the form
+However, as WinForms will render differently on each OS, when approving with WinForms it will take the form
 
-`ClassName.MethodName.osname.approved.extention` 
+`ClassName.MethodName.osname.approved.extension`
 
-It does this before each run by calling  
+It does this before each run by calling
 
 <!-- snippet: additional_info -->
 ```cs
@@ -46,25 +46,22 @@ ApprovalResults.UniqueForOs;
 <sup>[snippet source](/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L16-L18)</sup>
 <!-- endsnippet -->
 
-
 An Example Approval File would be:
 
 `WinFormTests.TestControlApproved.Microsoft_Windows_10_Home_N.approved.png`
 
+
 ### Customizing System Naming
 
-If you would like a diffent naming system you can customize the default naming.
+If you would like a different naming system you can customize the default naming.
 
 For example, if you would like to use the the users name you could do this:
 
 <!-- snippet: alternative_naming -->
 ```cs
-WinFormsApprovals
-    .RegisterDefaultAdditionalInfo(
-        () => ApprovalResults.UniqueForUserName()
-    )
+WinFormsApprovals.RegisterDefaultAdditionalInfo(ApprovalResults.UniqueForUserName)
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L17-L22)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L17-L19)</sup>
 <!-- endsnippet -->
 
 Would yield:
@@ -73,10 +70,11 @@ Would yield:
 ```cs
 "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L29-L31)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L26-L28)</sup>
 <!-- endsnippet -->
 
 Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)
+
 
 ## Links
 
