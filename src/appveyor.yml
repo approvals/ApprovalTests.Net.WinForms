@@ -3,4 +3,4 @@ build_script:
 - ps: >-
     dotnet build src --configuration Debug
 artifacts:
-  - path: **\*.received.*
+  - path: *.received.*
