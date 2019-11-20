@@ -4,3 +4,4 @@ build_script:
     dotnet build src --configuration Debug
 artifacts:
   - path: nuget_packages\*.nupkg
+  - path: **\*.received.*
