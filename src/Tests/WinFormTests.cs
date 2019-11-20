@@ -20,16 +20,12 @@ public class WinFormTests
             // end-snippet
         )
         {
-            using (var info = WinFormsApprovals.GetDefaultAdditionalInfo()())
-            {
-                var name = Approvals.GetDefaultNamer().Name;
-                var approvalName =
-                    // begin-snippet: alternative_custom_name
-                    "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
-                // end-snippet:
-
-                Assert.Equal(approvalName, name);
-            }
+            using var info = WinFormsApprovals.GetDefaultAdditionalInfo()();
+            var name = Approvals.GetDefaultNamer().Name;
+            var approvalName =
+                // begin-snippet: alternative_custom_name
+                "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
+            // end-snippet
         }
     }
 #endif

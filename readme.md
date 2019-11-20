@@ -24,7 +24,7 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L51-L55) / [anchor](#snippet-usage)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L47-L51) / [anchor](#snippet-usage)</sup>
 <!-- endsnippet -->
 
 
@@ -74,7 +74,7 @@ Would yield:
 ```cs
 "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L27-L29) / [anchor](#snippet-alternative_custom_name)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L26-L28) / [anchor](#snippet-alternative_custom_name)</sup>
 <!-- endsnippet -->
 
 Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)

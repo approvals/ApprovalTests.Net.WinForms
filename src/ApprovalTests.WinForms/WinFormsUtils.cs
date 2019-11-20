@@ -18,11 +18,9 @@ namespace ApprovalTests.WinForms
 
         public static void SavePng(string received, Control control)
         {
-            using (var bitmap = new Bitmap(control.Width, control.Height, PixelFormat.Format32bppArgb))
-            {
-                control.DrawToBitmap(bitmap, new Rectangle(0, 0, control.Width, control.Height));
-                bitmap.Save(received, ImageFormat.Png);
-            }
+            using var bitmap = new Bitmap(control.Width, control.Height, PixelFormat.Format32bppArgb);
+            control.DrawToBitmap(bitmap, new Rectangle(0, 0, control.Width, control.Height));
+            bitmap.Save(received, ImageFormat.Png);
         }
 
         public static void ConfigureInnerDisplay(Form hidden, Control controlUnderTest)
