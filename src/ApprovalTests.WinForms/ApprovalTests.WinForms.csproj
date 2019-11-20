@@ -4,8 +4,7 @@
     <TargetFrameworks>net461</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>UUtilities for approval testing Windows Forms. Allows screenshot verification of Windows Forms. For example:
-WinFormsApprovals.Verify(new Button { BackColor = Color.LightBlue, Text = "Help" });</Description>
+    <Description>UUtilities for approval testing Windows Forms. Allows screenshot verification of Windows Forms.</Description>
     <AssemblyInformationalVersion>$(Version)</AssemblyInformationalVersion>
     <Authors>Llewellyn Falco &amp; Dan Gilkerson</Authors>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
