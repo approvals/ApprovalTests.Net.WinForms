@@ -20,10 +20,11 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ## Usage
 
 <!-- snippet: usage -->
+<a id='snippet-usage'/></a>
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L49-L53)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L51-L55) / [anchor](#snippet-usage)</sup>
 <!-- endsnippet -->
 
 
@@ -40,10 +41,11 @@ However, as WinForms will render differently on each OS, when approving with Win
 It does this before each run by calling
 
 <!-- snippet: additional_info -->
+<a id='snippet-additional_info'/></a>
 ```cs
 ApprovalResults.UniqueForOs;
 ```
-<sup>[snippet source](/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L16-L18)</sup>
+<sup>[snippet source](/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L16-L18) / [anchor](#snippet-additional_info)</sup>
 <!-- endsnippet -->
 
 An Example Approval File would be:
@@ -58,19 +60,21 @@ If you would like a different naming system you can customize the default naming
 For example, if you would like to use the the users name you could do this:
 
 <!-- snippet: alternative_naming -->
+<a id='snippet-alternative_naming'/></a>
 ```cs
 WinFormsApprovals.RegisterDefaultAdditionalInfo(ApprovalResults.UniqueForUserName)
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L17-L19)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L18-L20) / [anchor](#snippet-alternative_naming)</sup>
 <!-- endsnippet -->
 
 Would yield:
 
 <!-- snippet: alternative_custom_name -->
+<a id='snippet-alternative_custom_name'/></a>
 ```cs
 "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L26-L28)</sup>
+<sup>[snippet source](/src/Tests/WinFormTests.cs#L27-L29) / [anchor](#snippet-alternative_custom_name)</sup>
 <!-- endsnippet -->
 
 Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)

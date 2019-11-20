@@ -1,3 +1,3 @@
-﻿using Xunit;
+﻿using ApprovalTests.Reporters;
 
-[assembly: CollectionBehavior(CollectionBehavior.CollectionPerAssembly, DisableTestParallelization = true)]
+[assembly: UseReporter(typeof(DiffReporter), typeof(AllFailingTestsClipboardReporter))]
