@@ -6,12 +6,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Windows.Forms" />
-    <PackageReference Include="ApprovalTests" Version="4.4.0" />
+    <PackageReference Include="ApprovalTests" Version="4.5.0" />
     <PackageReference Include="MarkdownSnippets.MsBuild" Version="17.0.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
-    <PackageReference Include="ApprovalTests" Version="4.4.0" />
+    <PackageReference Include="ApprovalTests" Version="4.5.0" />
     <ProjectReference Include="..\ApprovalTests.WinForms\ApprovalTests.WinForms.csproj" />
   </ItemGroup>
 </Project>
