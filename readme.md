@@ -24,7 +24,7 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L47-L51) / [anchor](#snippet-usage)</sup>
+<sup><a href='/src/Tests/WinFormTests.cs#L47-L51' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -45,7 +45,7 @@ It does this before each run by calling
 ```cs
 ApprovalResults.UniqueForOs;
 ```
-<sup>[snippet source](/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L16-L18) / [anchor](#snippet-additional_info)</sup>
+<sup><a href='/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L16-L18' title='File snippet `additional_info` was extracted from'>snippet source</a> | <a href='#snippet-additional_info' title='Navigate to start of snippet `additional_info`'>anchor</a></sup>
 <!-- endsnippet -->
 
 An Example Approval File would be:
@@ -64,7 +64,7 @@ For example, if you would like to use the the users name you could do this:
 ```cs
 WinFormsApprovals.RegisterDefaultAdditionalInfo(ApprovalResults.UniqueForUserName)
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L18-L20) / [anchor](#snippet-alternative_naming)</sup>
+<sup><a href='/src/Tests/WinFormTests.cs#L18-L20' title='File snippet `alternative_naming` was extracted from'>snippet source</a> | <a href='#snippet-alternative_naming' title='Navigate to start of snippet `alternative_naming`'>anchor</a></sup>
 <!-- endsnippet -->
 
 Would yield:
@@ -74,7 +74,7 @@ Would yield:
 ```cs
 "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
 ```
-<sup>[snippet source](/src/Tests/WinFormTests.cs#L26-L28) / [anchor](#snippet-alternative_custom_name)</sup>
+<sup><a href='/src/Tests/WinFormTests.cs#L26-L28' title='File snippet `alternative_custom_name` was extracted from'>snippet source</a> | <a href='#snippet-alternative_custom_name' title='Navigate to start of snippet `alternative_custom_name`'>anchor</a></sup>
 <!-- endsnippet -->
 
 Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)
