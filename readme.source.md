@@ -1,5 +1,8 @@
 # <img src="https://avatars3.githubusercontent.com/u/36907" height="30px"> ApprovalTests.WinForms
 
+[![Build status](https://ci.appveyor.com/api/projects/status/n6gbfw25qnbflu7k/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/approvaltests-net-winforms)
+[![NuGet Status](https://img.shields.io/nuget/v/ApprovalTests.WinForms.svg)](https://www.nuget.org/packages/ApprovalTests.WinForms/)
+
 Extends [ApprovalTests](https://github.com/approvals/ApprovalTests.Net) for approval of Windows Forms through screenshot verification.
 
 
@@ -47,9 +50,3 @@ Would yield:
 snippet: alternative_custom_name
 
 Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)
-
-
-## Links
-
- * NuGet: https://nuget.org/packages/ApprovalTests.WinForms/
- * Build: [![Build Status](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_apis/build/status/approvals.ApprovalTests.Net.WinForms?branchName=master)](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_build/latest?definitionId=2&branchName=master)

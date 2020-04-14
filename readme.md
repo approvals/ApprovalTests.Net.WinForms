@@ -7,6 +7,9 @@ To change this file edit the source file and then run MarkdownSnippets.
 
 # <img src="https://avatars3.githubusercontent.com/u/36907" height="30px"> ApprovalTests.WinForms
 
+[![Build status](https://ci.appveyor.com/api/projects/status/n6gbfw25qnbflu7k/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/approvaltests-net-winforms)
+[![NuGet Status](https://img.shields.io/nuget/v/ApprovalTests.WinForms.svg)](https://www.nuget.org/packages/ApprovalTests.WinForms/)
+
 Extends [ApprovalTests](https://github.com/approvals/ApprovalTests.Net) for approval of Windows Forms through screenshot verification.
 
 
@@ -24,7 +27,7 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup><a href='/src/Tests/WinFormTests.cs#L47-L51' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
+<sup><a href='/src/Tests/WinFormTests.cs#L44-L48' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
 <!-- endsnippet -->
 
 
@@ -62,7 +65,7 @@ For example, if you would like to use the the users name you could do this:
 <!-- snippet: alternative_naming -->
 <a id='snippet-alternative_naming'/></a>
 ```cs
-WinFormsApprovals.RegisterDefaultAdditionalInfo(ApprovalResults.UniqueForUserName)
+WinFormsApprovals.RegisterDefaultAdditionalInfo(ApprovalResults.UniqueForUserName);
 ```
 <sup><a href='/src/Tests/WinFormTests.cs#L18-L20' title='File snippet `alternative_naming` was extracted from'>snippet source</a> | <a href='#snippet-alternative_naming' title='Navigate to start of snippet `alternative_naming`'>anchor</a></sup>
 <!-- endsnippet -->
@@ -74,13 +77,7 @@ Would yield:
 ```cs
 "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
 ```
-<sup><a href='/src/Tests/WinFormTests.cs#L26-L28' title='File snippet `alternative_custom_name` was extracted from'>snippet source</a> | <a href='#snippet-alternative_custom_name' title='Navigate to start of snippet `alternative_custom_name`'>anchor</a></sup>
+<sup><a href='/src/Tests/WinFormTests.cs#L24-L26' title='File snippet `alternative_custom_name` was extracted from'>snippet source</a> | <a href='#snippet-alternative_custom_name' title='Navigate to start of snippet `alternative_custom_name`'>anchor</a></sup>
 <!-- endsnippet -->
 
 Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)
-
-
-## Links
-
- * NuGet: https://nuget.org/packages/ApprovalTests.WinForms/
- * Build: [![Build Status](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_apis/build/status/approvals.ApprovalTests.Net.WinForms?branchName=master)](https://dev.azure.com/approvals/ApprovalTests.Net.WinForms/_build/latest?definitionId=2&branchName=master)
