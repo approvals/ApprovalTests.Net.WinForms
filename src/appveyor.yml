@@ -4,3 +4,5 @@ build_script:
     dotnet build src --configuration Debug
 artifacts:
   - path: nuget_packages\*.nupkg
+on_failure:
+  - ps: Get-ChildItem *.received.* -recurse | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
