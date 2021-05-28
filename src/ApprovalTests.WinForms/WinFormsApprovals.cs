@@ -30,6 +30,7 @@ namespace ApprovalTests.WinForms
             return addAdditionalInfo;
         }
 
+#if NET461
         public static void VerifyEventsFor(Form form)
         {
             var sb = new StringBuilder();
@@ -40,6 +41,7 @@ namespace ApprovalTests.WinForms
 
             Approvals.Verify(sb.ToString());
         }
+#endif
 
         public static void Verify(Form form)
         {
