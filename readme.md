@@ -27,7 +27,7 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup><a href='/src/Tests/WinFormTests.cs#L42-L46' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/WinFormTests.cs#L47-L51' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 

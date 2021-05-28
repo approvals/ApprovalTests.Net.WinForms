@@ -28,27 +28,37 @@ public class WinFormTests
     [Fact]
     public void TestControlApproved()
     {
-        WinFormsApprovals.Verify(
-            new Button
-            {
-                BackColor = Color.LightBlue,
-                Text = "Help"
-            });
+        using (ApprovalResults.UniqueForDotNetVersion())
+        {
+            WinFormsApprovals.Verify(
+                new Button
+                {
+                    BackColor = Color.LightBlue,
+                    Text = "Help"
+                });
+        }
     }
 
     [Fact]
     public void TestFormApproval()
     {
-        #region usage
+        using (ApprovalResults.UniqueForDotNetVersion())
+        {
+            #region usage
 
-        WinFormsApprovals.Verify(new Form());
+            WinFormsApprovals.Verify(new Form());
 
-        #endregion
+            #endregion
+        }
     }
-
+#if NET48
     [Fact]
     public void VerifyCompleteFormTest()
     {
-        WinFormsApprovals.VerifyEventsFor(new DemoForm());
+        using (ApprovalResults.UniqueForDotNetVersion())
+        {
+            WinFormsApprovals.VerifyEventsFor(new DemoForm());
+        }
     }
+#endif
 }
