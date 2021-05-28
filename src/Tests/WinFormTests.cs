@@ -2,12 +2,10 @@
 using System.Windows.Forms;
 using ApprovalTests;
 using ApprovalTests.Namers;
-using ApprovalTests.Reporters;
 using ApprovalTests.Tests.WinForms;
 using ApprovalTests.WinForms;
 using Xunit;
 
-[UseReporter(typeof(AllFailingTestsClipboardReporter))]
 public class WinFormTests
 {
 #if DEBUG

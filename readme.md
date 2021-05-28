@@ -23,12 +23,12 @@ https://nuget.org/packages/ApprovalTests.WinForms/
 ## Usage
 
 <!-- snippet: usage -->
-<a id='snippet-usage'/></a>
+<a id='snippet-usage'></a>
 ```cs
 WinFormsApprovals.Verify(new Form());
 ```
-<sup><a href='/src/Tests/WinFormTests.cs#L44-L48' title='File snippet `usage` was extracted from'>snippet source</a> | <a href='#snippet-usage' title='Navigate to start of snippet `usage`'>anchor</a></sup>
-<!-- endsnippet -->
+<sup><a href='/src/Tests/WinFormTests.cs#L42-L46' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 
 ## System Differences
@@ -44,12 +44,12 @@ However, as WinForms will render differently on each OS, when approving with Win
 It does this before each run by calling
 
 <!-- snippet: additional_info -->
-<a id='snippet-additional_info'/></a>
+<a id='snippet-additional_info'></a>
 ```cs
 ApprovalResults.UniqueForOs;
 ```
-<sup><a href='/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L16-L18' title='File snippet `additional_info` was extracted from'>snippet source</a> | <a href='#snippet-additional_info' title='Navigate to start of snippet `additional_info`'>anchor</a></sup>
-<!-- endsnippet -->
+<sup><a href='/src/ApprovalTests.WinForms/WinFormsApprovals.cs#L16-L18' title='Snippet source file'>snippet source</a> | <a href='#snippet-additional_info' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 An Example Approval File would be:
 
@@ -63,21 +63,21 @@ If you would like a different naming system you can customize the default naming
 For example, if you would like to use the the users name you could do this:
 
 <!-- snippet: alternative_naming -->
-<a id='snippet-alternative_naming'/></a>
+<a id='snippet-alternative_naming'></a>
 ```cs
 WinFormsApprovals.RegisterDefaultAdditionalInfo(ApprovalResults.UniqueForUserName);
 ```
-<sup><a href='/src/Tests/WinFormTests.cs#L18-L20' title='File snippet `alternative_naming` was extracted from'>snippet source</a> | <a href='#snippet-alternative_naming' title='Navigate to start of snippet `alternative_naming`'>anchor</a></sup>
-<!-- endsnippet -->
+<sup><a href='/src/Tests/WinFormTests.cs#L16-L18' title='Snippet source file'>snippet source</a> | <a href='#snippet-alternative_naming' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 Would yield:
 
 <!-- snippet: alternative_custom_name -->
-<a id='snippet-alternative_custom_name'/></a>
+<a id='snippet-alternative_custom_name'></a>
 ```cs
 "WinFormTests.DemoAlternativeMachineSpecific.ForUser.Tomas";
 ```
-<sup><a href='/src/Tests/WinFormTests.cs#L24-L26' title='File snippet `alternative_custom_name` was extracted from'>snippet source</a> | <a href='#snippet-alternative_custom_name' title='Navigate to start of snippet `alternative_custom_name`'>anchor</a></sup>
-<!-- endsnippet -->
+<sup><a href='/src/Tests/WinFormTests.cs#L22-L24' title='Snippet source file'>snippet source</a> | <a href='#snippet-alternative_custom_name' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 Read more on [EnvironmentSpecificTest here](https://github.com/approvals/ApprovalTests.Net/blob/master/ApprovalTests/docs/EnvironmentSpecificTests.md)
